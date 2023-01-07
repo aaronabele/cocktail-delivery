@@ -1,0 +1,172 @@
+html {
+  background: rgb(253, 242, 242);
+  font-size: 10px;
+  font-family: "Gilroy-Medium", sans-serif;
+  color: black;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 2rem;
+  font-size: 1.1rem;
+  background-color: black;
+  color: white;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-flying-kangaroo {
+  padding: 1rem;
+  width: 13rem;
+  height: auto;
+}
+
+.header-links1-wrapper {
+  font-size: 1.7rem;
+  margin: 0 4rem;
+  font-weight: 400;
+}
+
+.link {
+  padding: 1.3rem;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-headers-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+#ready {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  color: darkorange;
+}
+
+#page-header {
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+main {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-article,
+.second-article {
+  margin-top: 5rem;
+  font-size: 1.6rem;
+  width: 44ch;
+}
+
+.article-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-logo1 {
+  width: 4.5rem;
+  height: auto;
+}
+
+.article-logo2 {
+  width: 5rem;
+  height: auto;
+}
+
+.drink {
+  height: 20rem;
+  width: auto;
+}
+.card-photo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper-cards {
+  margin-top: 7rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 265px);
+  grid-template-rows: auto;
+  gap: 0.2rem;
+  row-gap: 0.1rem;
+}
+
+.card {
+  outline: 1px solid black;
+  width: 24.6rem;
+  height: 42rem;
+  font-size: 1.6rem;
+  padding: 2.2rem 1rem;
+}
+
+.drink-descr {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 100;
+  margin: 2rem 0rem;
+  color: darkorange;
+}
+
+.drink-text {
+  width: 19ch;
+}
+
+.price {
+  font-weight: 800;
+  margin: 0;
+}
+
+small {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.addToCard {
+  margin: 2rem 0rem;
+  padding: 1rem 0rem;
+  width: 100%;
+  height: 4rem;
+  background-color: darkblue;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+}
