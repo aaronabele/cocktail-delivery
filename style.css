@@ -23,6 +23,18 @@ h6 {
   padding: 0;
 }
 
+header {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 13%,
+    rgba(104, 232, 255, 1) 46%,
+    rgba(0, 175, 201, 1) 75%
+  );
+  padding-bottom: 2rem;
+  border-bottom: 2px solid black;
+}
+
 .header-info {
   display: flex;
   justify-content: space-between;
@@ -40,15 +52,19 @@ h6 {
 }
 
 .logo-flying-kangaroo {
-  padding: 1rem;
-  width: 13rem;
+  margin-top: 0rem;
+  padding: 2rem 0rem;
+  width: 12rem;
   height: auto;
+  background-color: transparent;
 }
 
 .header-links1-wrapper {
   font-size: 1.7rem;
-  margin: 0 4rem;
+  margin: 0 0rem;
   font-weight: 400;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid black;
 }
 
 .link {
@@ -58,7 +74,7 @@ h6 {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .main-headers-wrapper {
@@ -66,7 +82,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin: 5rem;
 }
 
 #ready {
@@ -74,7 +90,7 @@ a {
   letter-spacing: 0.2rem;
   font-weight: 100;
   margin-bottom: 2rem;
-  color: darkorange;
+  color: darkgray;
 }
 
 #page-header {
@@ -82,24 +98,36 @@ a {
   font-weight: 500;
 }
 
-main,
-footer {
+main {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.first-article,
-.second-article {
+.article-title1 {
+  font-size: 2.5rem;
+}
+.first-article {
   margin-top: 5rem;
   font-size: 1.6rem;
-  width: 44ch;
+  width: 55ch;
+}
+
+.cocktail-shaker {
+  width: 8rem;
+  height: auto;
+  display: block;
 }
 
 .article-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 6rem;
+}
+
+.article1-text {
+  line-height: 2.4rem;
 }
 
 .article-logo1 {
@@ -124,14 +152,20 @@ footer {
   border-radius: 1rem;
   padding: 2rem 0rem;
 }
+.title-drink {
+  padding: 0;
+  font-size: 1.8rem;
+}
 
 .wrapper-cards {
-  margin-top: 2rem;
+  margin-top: 0.4rem;
+  padding: 2rem 0rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, 265px);
   grid-template-rows: auto;
   gap: 0.2rem;
   row-gap: 0.1rem;
+  border-top: 1px solid black;
 }
 
 .card {
@@ -170,10 +204,13 @@ footer {
   border-radius: 1rem;
   border: 1px solid black;
 }
-
+.footerid {
+  border-top: 2px solid black;
+  margin-top: 5rem;
+}
 .footer-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   padding: 1rem;
 }
