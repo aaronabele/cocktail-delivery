@@ -10,6 +10,7 @@ html {
 html,
 body {
   height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -22,7 +23,7 @@ h6 {
   margin: 0;
   padding: 0;
 }
-
+/*
 header {
   background: rgb(255, 255, 255);
   background: radial-gradient(
@@ -34,12 +35,13 @@ header {
   padding-bottom: 2rem;
   border-bottom: 2px solid black;
 }
+*/
 
 .header-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.1rem 2rem;
+  padding: 0.3rem 2rem;
   font-size: 1.1rem;
   background-color: black;
   color: white;
@@ -87,6 +89,7 @@ a {
 
 #ready {
   font-size: 1.3rem;
+
   letter-spacing: 0.2rem;
   font-weight: 100;
   margin-bottom: 2rem;
@@ -123,6 +126,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 4rem;
   margin-bottom: 6rem;
 }
 
@@ -307,4 +311,86 @@ article div {
   padding: 0.2rem 0rem;
   line-height: 3rem;
   font-size: 1.5rem;
+}
+
+/* B2B */
+
+.navBar {
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  padding-top: 0rem;
+  padding-bottom: 1.2rem;
+  width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+}
+
+.link {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.link1 {
+  font-size: 2.2rem;
+  padding: 0rem 5rem;
+  font-weight: 800;
+}
+
+.navBar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btn-engl,
+#btn-german,
+.anm-style {
+  background-color: transparent;
+  border: none;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+#btn-german {
+  border-left: 1px solid silver;
+}
+
+.anm-style {
+  margin-right: 4rem;
+  font-size: 1.2rem;
+}
+
+.navBar-wrapper2 img {
+  padding-top: 1rem;
+  width: 2.5rem;
+  height: auto;
+}
+
+.navBar-wrapper2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar-anm-cart {
+  margin-right: 4rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 5rem; /* Height of the footer */
+  width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
 }
