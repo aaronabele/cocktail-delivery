@@ -110,6 +110,7 @@ main {
 .article-title1 {
   font-size: 2.5rem;
 }
+
 .first-article {
   margin-top: 5rem;
   font-size: 1.6rem;
@@ -246,7 +247,6 @@ footer ul li {
 .company7,
 .company8,
 .company9,
-.company10,
 .company11 {
   visibility: hidden;
 }
@@ -280,10 +280,16 @@ footer ul li {
   margin-bottom: 10rem;
 }
 
-article img {
+.aboutUs-art1-pic {
   width: auto;
   height: 50rem;
   margin-left: 4.8rem;
+}
+
+.aboutUs-art2-pic {
+  width: auto;
+  height: 50rem;
+  margin-right: 4.8rem;
 }
 
 article p {
@@ -393,4 +399,19 @@ footer {
   width: 120rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.fb-insta-wrapper,
+.visa-master-wrapper,
+.apple-google-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.masterpic {
+  width: 24px;
+  height: auto;
 }
