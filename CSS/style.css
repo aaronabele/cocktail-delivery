@@ -260,6 +260,36 @@ footer ul li {
   border: none;
 }
 
+.aboutUs-pic-wrapper {
+  position: relative; /* this is important */
+}
+
+.aboutUs-pic {
+  filter: blur(0px);
+  transition: filter 0.5s ease-in-out;
+}
+
+.aboutUs-pic:hover {
+  filter: blur(5px);
+}
+
+.aboutUs-pic-wrapper:after {
+  content: "Our latest creation: Zauberflöte";
+  position: absolute; /* this is important */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* this centers the text */
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px darkorange;
+  visibility: hidden; /* text is hidden by default */
+}
+
+.aboutUs-pic-wrapper:hover:after {
+  visibility: visible; /* text is visible on hover */
+}
+
 .aboutUs-madeBy {
   border-bottom: 2px solid black;
   border-top: 2px solid black;
@@ -284,6 +314,17 @@ footer ul li {
   width: auto;
   height: 50rem;
   margin-left: 4.8rem;
+}
+
+.aboutUs-art1-pic,
+.aboutUs-art2-pic {
+  transform: scale(1); /* default scale */
+  transition: transform 0.5s ease-in-out;
+}
+
+.aboutUs-art1-pic:hover,
+.aboutUs-art2-pic:hover {
+  transform: scale(1.05); /* scale up by 20% */
 }
 
 .aboutUs-art2-pic {
@@ -415,3 +456,32 @@ footer {
   width: 24px;
   height: auto;
 }
+
+/*
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  // ...;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  // ...;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  // ...;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  // ...;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  // ...;
+}
+
+*/
