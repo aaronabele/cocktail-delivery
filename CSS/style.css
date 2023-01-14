@@ -23,19 +23,6 @@ h6 {
   margin: 0;
   padding: 0;
 }
-/*
-header {
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 13%,
-    rgba(104, 232, 255, 1) 46%,
-    rgba(0, 175, 201, 1) 75%
-  );
-  padding-bottom: 2rem;
-  border-bottom: 2px solid black;
-}
-*/
 
 .header-info {
   display: flex;
@@ -109,6 +96,9 @@ main {
 
 .article-title1 {
   font-size: 2.5rem;
+  background: linear-gradient(to right, #303030, #C0C0C0, #303030);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .first-article {
@@ -133,6 +123,7 @@ main {
 
 .article1-text {
   line-height: 2.4rem;
+  margin-top: 2.5rem;
 }
 
 .article-logo1 {
@@ -389,6 +380,9 @@ article div {
   font-size: 2.2rem;
   padding: 0rem 5rem;
   font-weight: 800;
+  background: linear-gradient(to right, #1E90FF, #FF69B4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navBar-wrapper {
@@ -457,7 +451,148 @@ footer {
   height: auto;
 }
 
-/*
+
+/* Spirits */
+
+.spirits-wrapper-overall{
+  margin: 15rem 0;
+}
+
+.spirits-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.spirits-header2{
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  margin-top: 8rem;
+  color: silver;
+}
+
+.spirits-header1{
+  font-size: 4rem;
+  background: linear-gradient(to right, #303030, #C0C0C0, #303030);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+}
+
+.spirits-main-footer{
+  text-align: center;
+  transform: rotate(-10deg);
+}
+
+.spirits-main-footer-text{
+  font-size: 7rem;
+  font-family: 'Sacramento', cursive;
+}
+
+.spirits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.spirit-pic{
+  border-radius: 1rem;
+}
+
+/* GIFTS */
+
+.gifts-main-header-wrapper{
+ text-align: center; 
+}
+
+.gifts-main-header2{
+  margin-top: 8rem;
+}
+
+.gifts-main-header1 {
+  margin-bottom: 8rem;
+  margin-top: 2rem;
+}
+
+.gifts-article-wrapper{
+  margin: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gifts-article-header{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+}
+
+.gifts-article-text{
+  width: 35ch;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.gifts-article2-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: left;
+  align-items: center;
+  margin-top: 8rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin-bottom: 8rem;
+}
+
+.gifts-article2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.gifts-article2-header{
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 0.22rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #3E2723, #FF8F00, #3E2723);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gifts-article2-text2{
+  text-align: center;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  width: 35ch;
+}
+
+.gifts-article2-img{
+  width: 40rem;
+  height: auto;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.gifts-article2-link{
+  margin-top: 4rem;
+  letter-spacing: 0.3rem;
+  color: #FF8F00;
+  padding: 0.2rem 0;
+}
+
+
+/* MEDIA QUERIES
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
