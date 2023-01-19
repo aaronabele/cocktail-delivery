@@ -14,6 +14,13 @@ body {
   margin: 0;
 }
 
+header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: snow;
+}
+
 h1,
 h2,
 h3,
@@ -23,6 +30,29 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
+.shop-main-header-wrapper{
+  text-align: center;
+}
+
+.shop-header2{
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  margin-top: 15rem;
+  color: silver;
+
+}
+
+.shop-header1{
+  font-size: 4rem;
+  background: linear-gradient(to right, #303030, #C0C0C0, #303030);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+
+}
+
 
 .header-info {
   display: flex;
@@ -108,7 +138,7 @@ main {
 }
 
 .cocktail-shaker {
-  width: 8rem;
+  width: 9rem;
   height: auto;
   display: block;
 }
@@ -122,8 +152,10 @@ main {
 }
 
 .article1-text {
+  margin-bottom: 7rem;
   line-height: 2.4rem;
   margin-top: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .article-logo1 {
@@ -247,38 +279,12 @@ footer ul li {
 .aboutUs-pic {
   width: 100%;
   height: auto;
-  margin-top: 5rem;
+  margin-top: 15rem;
   border: none;
 }
 
 .aboutUs-pic-wrapper {
-  position: relative; /* this is important */
-}
-
-.aboutUs-pic {
-  filter: blur(0px);
-  transition: filter 0.5s ease-in-out;
-}
-
-.aboutUs-pic:hover {
-  filter: blur(5px);
-}
-
-.aboutUs-pic-wrapper:after {
-  content: "Our latest creation: Zauberflöte";
-  position: absolute; /* this is important */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* this centers the text */
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-shadow: 1px 1px darkorange;
-  visibility: hidden; /* text is hidden by default */
-}
-
-.aboutUs-pic-wrapper:hover:after {
-  visibility: visible; /* text is visible on hover */
+  z-index: -1;
 }
 
 .aboutUs-madeBy {
@@ -305,6 +311,7 @@ footer ul li {
   width: auto;
   height: 50rem;
   margin-left: 4.8rem;
+  z-index: -1;
 }
 
 .aboutUs-art1-pic,
@@ -322,6 +329,7 @@ footer ul li {
   width: auto;
   height: 50rem;
   margin-right: 4.8rem;
+  z-index: -1;
 }
 
 article p {
@@ -354,14 +362,13 @@ article div {
 /* B2B */
 
 .navBar {
-  background-color: transparent;
   border-bottom: 2px solid black;
   padding-top: 0rem;
-  padding-bottom: 1.2rem;
-  width: 120rem;
+  width: 100%;
+  height: 8rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .nav-ul {
@@ -373,7 +380,7 @@ article div {
 
 .link {
   padding-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .link1 {
@@ -469,7 +476,7 @@ footer {
 .spirits-header2{
   font-size: 1.2rem;
   letter-spacing: 0.3rem;
-  margin-top: 8rem;
+  margin-top: 15rem;
   color: silver;
 }
 
@@ -479,7 +486,7 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 1rem;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 
 .spirits-main-footer{
@@ -492,15 +499,41 @@ footer {
   font-family: 'Sacramento', cursive;
 }
 
-.spirits {
+
+.spirits-article-header2{
+  padding-left: 3rem;
+}
+
+.spirits-article-text{
+padding: 3rem;
+width: 35ch;
+}
+
+.spirit-pic{
+  width: 35rem;
+  height: auto;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.spirits-article2-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   justify-content: left;
-  align-items: flex-start;
+  align-items: center;
+  margin-top: 15rem;
+  background-color: white;
+  border-radius: 1rem;
 }
 
-.spirit-pic{
+.spirits-article3-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: left;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: white;
   border-radius: 1rem;
 }
 
@@ -511,11 +544,11 @@ footer {
 }
 
 .gifts-main-header2{
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .gifts-main-header1 {
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
   margin-top: 2rem;
 }
 
