@@ -14,17 +14,24 @@ body {
   margin: 0;
 }
 
-header {
+.header-wrapper{
+  margin-top: 3rem;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-info {
   top: 0;
   width: 100%;
   position: fixed;
   background-color: snow;
 }
 
-h1,
+h1, 
 h2,
 h3,
-h4,
+h4, 
 h5,
 h6 {
   margin: 0;
@@ -361,6 +368,67 @@ article div {
 
 /* B2B */
 
+.B2B-pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+
+}
+
+.B2B-picture-sizing{
+  width: 120rem;
+  height: 80rem;
+}
+
+.b2b-text1 {
+  position: absolute;
+  top: 65rem;
+  left: 80rem;
+  color: white;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.b2b-text2 {
+  position: absolute;
+  top: 80rem;
+  left: 80rem;
+  color: white;
+  font-size: 1.5rem;
+  width: 55ch;
+  font-weight: 100;
+}
+
+.b2b-text3 {
+  position: absolute;
+  top: 90rem;
+  left: 80rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.b2b-text4 {
+  position: absolute;
+  top: 90rem;
+  left: 100rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.b2b-btn {
+  padding: 1rem 1rem;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 100;
+  background-color: transparent;
+  color: white;
+  border-radius: 1rem;
+  border: 1px solid white;
+}
+
 .navBar {
   border-bottom: 2px solid black;
   padding-top: 0rem;
@@ -623,7 +691,6 @@ width: 35ch;
   color: #FF8F00;
   padding: 0.2rem 0;
 }
-
 
 /* MEDIA QUERIES
 
